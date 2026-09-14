@@ -1,0 +1,21 @@
+/* TELEIOS — motion. One easing curve: expo.out. Smooth scroll via Lenis.
+   prefers-reduced-motion turns everything off. */
+:root{
+  --ease-expo-out:cubic-bezier(0.16,1,0.3,1); /* @kind other */
+  --duration-fast:180ms; /* @kind other */
+  --duration-base:420ms; /* @kind other */
+  --duration-reveal:900ms; /* @kind other */
+  --stagger-card:120ms; /* @kind other */
+  --stagger-rotate:-1.2deg; /* @kind other */
+  --reveal-shift:115%;
+  --sticky-step:20px;
+}
+@media (prefers-reduced-motion:reduce){
+  :root{
+    --duration-fast:0ms; /* @kind other */
+    --duration-base:0ms; /* @kind other */
+    --duration-reveal:0ms; /* @kind other */
+    --stagger-card:0ms; /* @kind other */
+    --stagger-rotate:0deg; /* @kind other */
+  }
+}

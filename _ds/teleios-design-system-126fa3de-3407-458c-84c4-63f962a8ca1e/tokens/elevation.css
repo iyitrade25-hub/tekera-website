@@ -1,0 +1,6 @@
+/* TELEIOS — elevation. Cards carry a 1px rule and no shadow. The only
+   shadow in the system is the green cast under the fixed WhatsApp button. */
+:root{
+  --shadow-none:none;
+  --shadow-accent-float:0 8px 28px rgba(0,208,126,0.28);
+}

@@ -1,0 +1,26 @@
+/* TELEIOS — space. 4px scale, with a deliberate jump to 104px between
+   sections. Container 1140px, 16px side padding. */
+:root{
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-8:32px;
+  --space-10:40px;
+  --space-12:48px;
+  --space-16:64px;
+  --space-20:80px;
+  --space-section:104px;
+
+  --container:1140px;
+  --gutter:16px;
+
+  --pad-card:24px;
+  --pad-card-lg:32px;
+  --pad-block-hero:48px;
+  --accent-bar-width:2px;
+  --accent-bar-inset:20px;
+  --dot-size:6px;
+}

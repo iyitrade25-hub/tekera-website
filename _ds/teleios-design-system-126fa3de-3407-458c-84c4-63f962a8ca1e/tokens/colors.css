@@ -1,0 +1,76 @@
+/* TELEIOS — color. Two page backgrounds for the whole system: off-white and
+   graphite, alternating by section. Green is the single brand accent and
+   appears in small quantity. Never two green accents on one screen. */
+:root{
+  /* core */
+  --teleios-graphite:#101013;
+  --teleios-offwhite:#FAFAFA;
+  --teleios-green:#00D07E;
+  --teleios-green-text:#00754A;
+
+  /* dark scale */
+  --dark-bg:#101013;
+  --dark-card:#1B1B1F;
+  --dark-rule:#26262C;
+  --dark-card-rule:#2A2A2F;
+  --dark-button-rule:#3E3E45;
+
+  /* light scale */
+  --light-bg:#FAFAFA;
+  --light-card:#FFFFFF;
+  --light-rule:#E4E4E7;
+  --light-strike:#C9C9CE;
+
+  /* green family */
+  --green-500:#00D07E;
+  --green-600:#00B86F;
+  --green-700:#00754A;
+  --green-200:#7FEBBB;
+  --green-900:#1C5C40;
+  --green-950:#0C1F17;
+  --green-ink:#06231A;
+
+  /* text neutrals */
+  --neutral-body-light:#5A5A62;
+  --neutral-body-dark:#A1A1AA;
+  --neutral-muted:#8B8B94;
+
+  /* semantic — light surfaces (default) */
+  --surface-page:var(--light-bg);
+  --surface-card:var(--light-card);
+  --border-hairline:var(--light-rule);
+  --border-decorative:var(--light-strike);
+  --text-strong:var(--teleios-graphite);
+  --text-body:var(--neutral-body-light);
+  --text-muted:var(--neutral-muted);
+  --text-accent:var(--green-700);
+
+  /* semantic — accent + action */
+  --accent:var(--green-500);
+  --accent-hover:var(--green-600);
+  --accent-ink:var(--green-ink);
+  --dot-accent:var(--green-500);
+
+  /* semantic — badge / selo */
+  --badge-bg:var(--green-950);
+  --badge-border:var(--green-900);
+  --badge-text:var(--green-200);
+
+  /* nav glass — the one transparency in the system */
+  --nav-scrim:rgba(16,16,19,0.88);
+  --nav-blur:12px;
+}
+
+/* Dark section scope. Apply to a <section>/block that flips to graphite. */
+.teleios-dark{
+  --surface-page:var(--dark-bg);
+  --surface-card:var(--dark-card);
+  --border-hairline:var(--dark-rule);
+  --border-decorative:var(--dark-card-rule);
+  --text-strong:var(--teleios-offwhite);
+  --text-body:var(--neutral-body-dark);
+  --text-muted:var(--neutral-muted);
+  --text-accent:var(--green-500);
+  background:var(--surface-page);
+  color:var(--text-body);
+}

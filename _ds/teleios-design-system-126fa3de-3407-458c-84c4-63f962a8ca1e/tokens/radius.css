@@ -1,0 +1,12 @@
+/* TELEIOS — radius. The 28px graphite block floating over the off-white page
+   is the structural signature of the layout. */
+:root{
+  --radius-sm:8px;
+  --radius-button:12px;
+  --radius-card:16px;
+  --radius-layer:20px;
+  --radius-photo:20px;
+  --radius-hero:28px;
+  --radius-pill:999px;
+  --border-width:1px;
+}

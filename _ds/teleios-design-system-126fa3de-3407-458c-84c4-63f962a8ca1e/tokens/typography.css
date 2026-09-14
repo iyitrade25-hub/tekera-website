@@ -1,0 +1,47 @@
+/* TELEIOS — type. Sora for titles (the 300/700 weight contrast in one
+   sentence is the brand's typographic gesture), Instrument Sans for body,
+   JetBrains Mono for labels and card numbering. Casing stays normal:
+   no Title Case, no all-caps headings. Caps only in mono labels and the
+   TELEIOS signature. */
+:root{
+  --font-display:"Sora",system-ui,sans-serif;
+  --font-body:"Instrument Sans",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+
+  --weight-display-light:300;
+  --weight-display-bold:700;
+  --weight-stat:600;
+  --weight-body:400;
+  --weight-body-strong:600;
+
+  /* display sizes */
+  --size-h1:clamp(34px,5vw,58px);
+  --size-h2:clamp(28px,3.4vw,40px);
+  --size-quote:clamp(28px,4vw,48px);
+  --size-lead:clamp(20px,2.3vw,27px);
+  --size-stat:56px;
+
+  /* body sizes */
+  --size-body:17px;
+  --size-table:16px;
+  --size-faq:15px;
+  --size-card-support:14px;
+  --size-label:12px;
+
+  /* tracking */
+  --track-h1:-0.035em;
+  --track-h2:-0.025em;
+  --track-stat:-0.02em;
+  --track-label:0.12em;
+  --track-signature:0.1em;
+
+  /* leading */
+  --leading-display:1.05;
+  --leading-lead:1.35;
+  --leading-body:1.65;
+  --leading-body-long:1.7;
+
+  /* reading measure */
+  --measure-body:760px;
+  --measure-quote:980px;
+}
