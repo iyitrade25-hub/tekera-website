@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Tekera — Home institucional" description="Site institucional single-page da Tekera para validação Meta / WhatsApp API." -->
+<helmet><script src="./ds-base.js"></script><style>body{margin:0;background:#FAFAFA}a{color:#00754A;text-decoration:none}a:hover{color:#00B86F}</style></helmet>
+<div style="background:#FAFAFA;font-family:'Instrument Sans',system-ui,sans-serif;color:#101013">
+
+<nav style="position:sticky;top:0;z-index:20;background:rgba(16,16,19,0.88);backdrop-filter:blur(12px);border-bottom:1px solid #26262C">
+  <div style="max-width:1140px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:32px">
+    <span style="font-family:'Sora',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:17px;color:#FAFAFA">Tekera</span>
+    <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap">
+      <a href="#missao" style="font-size:15px;color:#A1A1AA">Missão</a>
+      <a href="#fundador" style="font-size:15px;color:#A1A1AA">Fundador</a>
+      <a href="#privacidade" style="font-size:15px;color:#A1A1AA">Privacidade</a>
+      <a href="#contato" style="font-size:15px;color:#A1A1AA">Contato</a>
+    </div>
+  </div>
+</nav>
+
+<section style="padding:40px 16px 104px">
+  <div style="max-width:1140px;margin:0 auto">
+    <div class="teleios-dark" style="background:#101013;border-radius:28px;padding:56px 48px;display:grid;gap:32px;justify-items:start">
+      <x-import component-from-global-scope="TeleiosDesignSystem_126fa3.Badge" dot="{{ true }}" hint-size="230px,32px">Tecnologia para quem vende</x-import>
+      <h1 style="margin:0;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(34px,5vw,58px);letter-spacing:-0.035em;line-height:1.05;color:#FAFAFA;max-width:920px">A mesma tecnologia que a grande corporação usa.<br><strong style="font-weight:700">Na mão do pequeno e médio empresário.</strong></h1>
+      <p style="margin:0;font-size:17px;line-height:1.65;color:#A1A1AA;max-width:760px">A Tekera nasceu para nivelar o jogo. A gente coloca no dia a dia do seller e do dono de operação as ferramentas, os processos e a inteligência que antes só couberam em empresa grande.</p>
+    </div>
+  </div>
+</section>
+
+<section id="missao" style="padding:0 16px 104px">
+  <div style="max-width:1140px;margin:0 auto">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">01</span>&nbsp;&nbsp;Missão</div>
+    <h2 style="margin:24px 0 24px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#101013;max-width:900px">Apoiar o pequeno e médio empresário a ter acesso <strong style="font-weight:700">às mesmas ferramentas que uma grande corporação.</strong></h2>
+    <p style="margin:0;font-size:17px;line-height:1.7;color:#5A5A62;max-width:760px">Sistema, integração, automação, dado. Tudo isso deixou de ser luxo de multinacional. A Tekera existe para instalar essa camada de tecnologia dentro de operações de e-commerce que ainda tocam a maior parte do trabalho no braço.</p>
+
+    <blockquote style="margin:80px 0 0;padding-left:20px;border-left:2px solid #00D07E;max-width:980px">
+      <p style="margin:0;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,4vw,48px);letter-spacing:-0.025em;line-height:1.15;color:#101013">Empresa grande não vence por talento. <strong style="font-weight:700">Vence por sistema.</strong></p>
+    </blockquote>
+  </div>
+</section>
+
+<section id="fundador" class="teleios-dark" style="background:#101013;padding:104px 16px">
+  <div style="max-width:1140px;margin:0 auto">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00D07E">02</span>&nbsp;&nbsp;Fundador</div>
+    <h2 style="margin:24px 0 40px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#FAFAFA;max-width:820px">Matheus Cabral. <strong style="font-weight:700">Dez anos dentro de empresa de tecnologia.</strong></h2>
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;margin-top:8px">
+      <div>
+        <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:56px;letter-spacing:-0.02em;line-height:1;color:#00D07E">10+</div>
+        <div style="font-size:14px;line-height:1.65;color:#A1A1AA;margin-top:12px;max-width:260px">Anos construindo produto e operação em empresas de tecnologia.</div>
+      </div>
+      <div>
+        <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:56px;letter-spacing:-0.02em;line-height:1;color:#FAFAFA">1 dono</div>
+        <div style="font-size:14px;line-height:1.65;color:#A1A1AA;margin-top:12px;max-width:260px">Que assina, atende e responde pelo que a Tekera entrega.</div>
+      </div>
+      <div>
+        <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:56px;letter-spacing:-0.02em;line-height:1;color:#FAFAFA">PME</div>
+        <div style="font-size:14px;line-height:1.65;color:#A1A1AA;margin-top:12px;max-width:260px">O único público. Pequeno e médio empresário, dentro do e-commerce.</div>
+      </div>
+    </div>
+    <p style="margin:64px 0 0;font-size:17px;line-height:1.7;color:#A1A1AA;max-width:760px">Passei dez anos por dentro de empresa de tecnologia, vendo como corporação grande resolve o que corporação pequena ainda faz na mão. A Tekera é o caminho para levar essa mesma engenharia para quem toca a operação de perto.</p>
+  </div>
+</section>
+
+<section id="privacidade" style="padding:104px 16px">
+  <div style="max-width:1140px;margin:0 auto">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">03</span>&nbsp;&nbsp;Privacidade</div>
+    <h2 style="margin:24px 0 40px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#101013;max-width:820px">Como a Tekera trata dados e mensagens de <strong style="font-weight:700">WhatsApp</strong>.</h2>
+    <div style="max-width:760px;display:grid;gap:24px;font-size:17px;line-height:1.7;color:#5A5A62">
+      <p style="margin:0"><strong style="color:#101013;font-weight:600">Dados coletados.</strong> A Tekera coleta apenas os dados necessários para prestar o serviço: nome, telefone, e-mail e o conteúdo da conversa iniciada pelo cliente com a empresa.</p>
+      <p style="margin:0"><strong style="color:#101013;font-weight:600">Uso dos dados.</strong> Usamos os dados para responder ao cliente, executar o serviço contratado e cumprir obrigação legal. Nada é vendido a terceiros.</p>
+      <p style="margin:0"><strong style="color:#101013;font-weight:600">WhatsApp Business API.</strong> Quando a conversa acontece pelo WhatsApp, o tratamento segue também os termos da Meta Platforms, Inc. Só enviamos mensagem para quem iniciou a conversa ou consentiu expressamente em recebê-la.</p>
+      <p style="margin:0"><strong style="color:#101013;font-weight:600">Armazenamento.</strong> Dados ficam em provedores de nuvem com criptografia em trânsito e em repouso, no prazo estritamente necessário para o serviço e o cumprimento da LGPD (Lei 13.709/2018).</p>
+      <p style="margin:0"><strong style="color:#101013;font-weight:600">Seus direitos.</strong> O titular pode a qualquer momento pedir acesso, correção ou exclusão dos seus dados escrevendo para <a href="mailto:contato@tekeradigital.com.br">contato@tekeradigital.com.br</a>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="teleios-dark" style="background:#101013;padding:104px 16px">
+  <div style="max-width:1140px;margin:0 auto">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00D07E">04</span>&nbsp;&nbsp;Contato</div>
+    <h2 style="margin:24px 0 40px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#FAFAFA;max-width:760px">Um endereço. <strong style="font-weight:700">Uma resposta.</strong></h2>
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:900px">
+      <div style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:32px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#00D07E">E-mail</div>
+        <div style="margin-top:16px;font-family:'Sora',sans-serif;font-weight:300;font-size:24px;letter-spacing:-0.02em;color:#FAFAFA;word-break:break-all"><a href="mailto:contato@tekeradigital.com.br" style="color:#FAFAFA">contato@tekeradigital.com.br</a></div>
+      </div>
+      <div style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:32px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#00D07E">Empresa</div>
+        <div style="margin-top:16px;font-family:'Sora',sans-serif;font-weight:300;font-size:20px;letter-spacing:-0.02em;color:#FAFAFA;line-height:1.35">Tekera Digital e Investimentos Ltda</div>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#A1A1AA">CNPJ 58.227.601/0001-11</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="teleios-dark" style="background:#101013;border-top:1px solid #26262C;padding:48px 16px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
+    <span style="font-family:'Sora',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:17px;color:#FAFAFA">Tekera</span>
+    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94">© 2026 Tekera Digital e Investimentos Ltda · CNPJ 58.227.601/0001-11</span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+</body>
+</html>
