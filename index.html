@@ -1,97 +1,281 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
+<title>Tekera — Tecnologia e processo para o pequeno e médio empresário</title>
+<meta name="description" content="A Tekera instala tecnologia, processo e inteligência que antes só cabiam em grande empresa, na mão de quem toca a operação de e-commerce e PME.">
+<meta property="og:title" content="Tekera — Tecnologia para quem vende">
+<meta property="og:description" content="A mesma tecnologia que a grande corporação usa, na mão do pequeno e médio empresário.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: #FAFAFA; font-family: 'Instrument Sans', system-ui, sans-serif; color: #101013; -webkit-font-smoothing: antialiased; }
+  a { color: #00754A; text-decoration: none; }
+  a:hover { color: #00B86F; }
+  img { max-width: 100%; display: block; }
+  summary { list-style: none; cursor: pointer; }
+  summary::-webkit-details-marker { display: none; }
+  .btn-primary:hover { background: #00D07E !important; color: #06231A !important; }
+  .btn-outline:hover { border-color: #00D07E !important; color: #00D07E !important; }
+  .btn-inverse:hover { background: #00B86F !important; }
+  .nav-link:hover { color: #FAFAFA !important; }
+  .pain-card { transition: transform .5s cubic-bezier(.16,1,.3,1), border-color .5s; }
+  .pain-card:hover { transform: translateY(-4px); border-color: #00754A !important; }
+  .step-card { transition: transform .5s cubic-bezier(.16,1,.3,1), border-color .5s; }
+  .step-card:hover { transform: translateY(-4px); border-color: #00D07E !important; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; } }
+</style>
 </head>
 <body>
-<x-dc>
-<!-- @template name="Tekera — Home institucional" description="Site institucional single-page da Tekera para validação Meta / WhatsApp API." -->
-<helmet><script src="./ds-base.js"></script><style>body{margin:0;background:#FAFAFA}a{color:#00754A;text-decoration:none}a:hover{color:#00B86F}</style></helmet>
-<div style="background:#FAFAFA;font-family:'Instrument Sans',system-ui,sans-serif;color:#101013">
 
-<nav style="position:sticky;top:0;z-index:20;background:rgba(16,16,19,0.88);backdrop-filter:blur(12px);border-bottom:1px solid #26262C">
+<nav style="position:sticky;top:0;z-index:50;background:rgba(16,16,19,0.88);backdrop-filter:blur(12px);border-bottom:1px solid #26262C">
   <div style="max-width:1140px;margin:0 auto;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:32px">
-    <span style="font-family:'Sora',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:17px;color:#FAFAFA">Tekera</span>
+    <a href="#top" style="font-family:'Sora',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:17px;color:#FAFAFA">Tekera</a>
     <div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap">
-      <a href="#missao" style="font-size:15px;color:#A1A1AA">Missão</a>
-      <a href="#fundador" style="font-size:15px;color:#A1A1AA">Fundador</a>
-      <a href="/privacidade" style="font-size:15px;color:#A1A1AA">Privacidade</a>
-      <a href="#contato" style="font-size:15px;color:#A1A1AA">Contato</a>
+      <a href="#missao" class="nav-link" style="font-size:15px;color:#A1A1AA">Missão</a>
+      <a href="#teleios" class="nav-link" style="font-size:15px;color:#A1A1AA">Teleios</a>
+      <a href="#metodo" class="nav-link" style="font-size:15px;color:#A1A1AA">Método</a>
+      <a href="#fundador" class="nav-link" style="font-size:15px;color:#A1A1AA">Fundador</a>
+      <a href="/privacidade" class="nav-link" style="font-size:15px;color:#A1A1AA">Privacidade</a>
+      <a href="#contato" class="nav-link" style="font-size:15px;color:#A1A1AA">Contato</a>
     </div>
   </div>
 </nav>
 
-<section style="padding:40px 16px 104px">
+<section id="top" style="padding:40px 16px 104px">
   <div style="max-width:1140px;margin:0 auto">
-    <div class="teleios-dark" style="background:#101013;border-radius:28px;padding:56px 48px;display:grid;gap:32px;justify-items:start">
-      <x-import component-from-global-scope="TeleiosDesignSystem_126fa3.Badge" dot="{{ true }}" hint-size="230px,32px">Tecnologia para quem vende</x-import>
-      <h1 style="margin:0;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(34px,5vw,58px);letter-spacing:-0.035em;line-height:1.05;color:#FAFAFA;max-width:920px">A mesma tecnologia que a grande corporação usa.<br><strong style="font-weight:700">Na mão do pequeno e médio empresário.</strong></h1>
-      <p style="margin:0;font-size:17px;line-height:1.65;color:#A1A1AA;max-width:760px">A Tekera nasceu para nivelar o jogo. A gente coloca no dia a dia do seller e do dono de operação as ferramentas, os processos e a inteligência que antes só couberam em empresa grande.</p>
+    <div style="background:#101013;border-radius:28px;padding:56px 48px;display:grid;gap:32px;justify-items:start;overflow:hidden;position:relative">
+      <span aria-hidden style="position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(closest-side,rgba(0,208,126,0.22),transparent);filter:blur(40px);pointer-events:none"></span>
+      <div data-tk="fade" style="display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:999px;border:1px solid #1C5C40;background:#0C1F17;position:relative">
+        <span style="width:6px;height:6px;border-radius:999px;background:#00D07E"></span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#7FEBBB;text-transform:uppercase">Tecnologia para quem vende</span>
+      </div>
+      <h1 style="margin:0;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(34px,5vw,58px);letter-spacing:-0.035em;line-height:1.05;color:#FAFAFA;max-width:920px;position:relative">
+        <span data-tk="hline" style="display:block;overflow:hidden;padding:0.14em 0;margin:-0.14em 0"><span style="display:block">A mesma tecnologia que a grande corporação usa.</span></span>
+        <span data-tk="hline" style="display:block;overflow:hidden;padding:0.14em 0;margin:-0.14em 0"><span style="display:block;font-weight:700">Na mão do pequeno e médio empresário.</span></span>
+      </h1>
+      <p data-tk="fade" style="margin:0;font-size:17px;line-height:1.65;color:#A1A1AA;max-width:760px;position:relative">A Tekera nasceu para nivelar o jogo. A gente coloca no dia a dia do seller e do dono de operação as ferramentas, os processos e a inteligência que antes só couberam em empresa grande.</p>
+      <div data-tk="fade" style="display:flex;gap:12px;flex-wrap:wrap;position:relative">
+        <a href="#contato" class="btn-primary" style="padding:16px 28px;border-radius:12px;background:#FAFAFA;color:#101013;font-size:15px;font-weight:600">Falar com a Tekera</a>
+        <a href="#metodo" class="btn-outline" style="padding:16px 28px;border-radius:12px;border:1px solid #3E3E45;color:#FAFAFA;font-size:15px;font-weight:600">Ver como funciona</a>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="missao" style="padding:0 16px 104px">
+<section id="missao" style="padding:0 16px 120px">
   <div style="max-width:1140px;margin:0 auto">
-    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">01</span>&nbsp;&nbsp;Missão</div>
-    <h2 style="margin:24px 0 24px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#101013;max-width:900px">Apoiar o pequeno e médio empresário a ter acesso <strong style="font-weight:700">às mesmas ferramentas que uma grande corporação.</strong></h2>
-    <p style="margin:0;font-size:17px;line-height:1.7;color:#5A5A62;max-width:760px">Sistema, integração, automação, dado. Tudo isso deixou de ser luxo de multinacional. A Tekera existe para instalar essa camada de tecnologia dentro de operações de e-commerce que ainda tocam a maior parte do trabalho no braço.</p>
-
-    <blockquote style="margin:80px 0 0;padding-left:20px;border-left:2px solid #00D07E;max-width:980px">
+    <div data-tk="reveal" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">01</span>&nbsp;&nbsp;Missão</div>
+    <h2 data-tk="reveal" style="margin:24px 0 24px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#101013;max-width:900px">Apoiar o pequeno e médio empresário a ter acesso <strong style="font-weight:700">às mesmas ferramentas que uma grande corporação.</strong></h2>
+    <p data-tk="reveal" style="margin:0;font-size:17px;line-height:1.7;color:#5A5A62;max-width:760px">Sistema, integração, automação, dado. Tudo isso deixou de ser luxo de multinacional. A Tekera existe para instalar essa camada de tecnologia dentro de operações de e-commerce e PME que ainda tocam a maior parte do trabalho no braço.</p>
+    <blockquote data-tk="reveal" style="margin:80px 0 0;padding-left:20px;border-left:2px solid #00D07E;max-width:980px">
       <p style="margin:0;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,4vw,48px);letter-spacing:-0.025em;line-height:1.15;color:#101013">Empresa grande não vence por talento. <strong style="font-weight:700">Vence por sistema.</strong></p>
     </blockquote>
   </div>
 </section>
 
-<section id="fundador" class="teleios-dark" style="background:#101013;padding:104px 16px">
+<section id="teleios" style="padding:0 16px 120px">
   <div style="max-width:1140px;margin:0 auto">
-    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00D07E">02</span>&nbsp;&nbsp;Fundador</div>
-    <h2 style="margin:24px 0 40px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#FAFAFA;max-width:820px">Matheus Cabral. <strong style="font-weight:700">Dez anos dentro de empresa de tecnologia.</strong></h2>
-    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;margin-top:8px">
-      <div>
+    <div data-tk="reveal" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">02</span>&nbsp;&nbsp;Teleios</div>
+    <h2 data-tk="reveal" style="margin:24px 0 24px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#101013;max-width:900px"><strong style="font-weight:700">Teleios</strong></h2>
+    <p data-tk="reveal" style="margin:0;font-size:17px;line-height:1.7;color:#5A5A62;max-width:760px">A Teleios é a marca da Tekera. Implantamos e acompanhamos um assistente de atendimento no WhatsApp e soluções de IA.</p>
+  </div>
+</section>
+
+<section style="padding:0 16px 120px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:36px">
+    <div>
+      <div data-tk="reveal" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">03</span>&nbsp;&nbsp;O padrão se repete</div>
+      <h2 data-tk="reveal" style="margin:18px 0 0;max-width:820px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.15;color:#101013">Você acha que o problema é falta de cliente. <strong style="font-weight:600">O problema é que a operação não escala.</strong></h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px">
+      <article data-tk="card" class="pain-card" style="background:#FFFFFF;border:1px solid #E4E4E7;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#00754A">01</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:18px;line-height:1.3;color:#101013">Seu lead morre de velhice</span>
+        <span style="font-size:14px;line-height:1.65;color:#5A5A62">Pagou R$ 15 no click. Entrou no WhatsApp. Esperou 4 horas por uma resposta. Nesse tempo, comprou do concorrente. Você não perdeu por preço — perdeu por <strong style="font-weight:600;color:#101013">lentidão</strong>.</span>
+      </article>
+      <article data-tk="card" class="pain-card" style="background:#FFFFFF;border:1px solid #E4E4E7;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#00754A">02</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:18px;line-height:1.3;color:#101013">Seu melhor vendedor é um gargalo</span>
+        <span style="font-size:14px;line-height:1.65;color:#5A5A62">Quando viaja, fica doente ou sai, a receita cai. Você construiu um negócio que depende de herói. Herói cansa. Herói sai. E a conta chega.</span>
+      </article>
+      <article data-tk="card" class="pain-card" style="background:#FFFFFF;border:1px solid #E4E4E7;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#00754A">03</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:18px;line-height:1.3;color:#101013">Você decide no escuro</span>
+        <span style="font-size:14px;line-height:1.65;color:#5A5A62">Sua intuição já custou caro demais. Sem número, sem processo, sem previsibilidade. Você aposta o salário da equipe no feeling do mês.</span>
+      </article>
+    </div>
+    <p data-tk="reveal" style="margin:0;max-width:760px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(20px,2.2vw,26px);line-height:1.45;color:#101013">Empresas que você admira não são mais inteligentes. Elas só têm <strong style="font-weight:600">um sistema que você ainda não tem.</strong></p>
+  </div>
+</section>
+
+<section id="metodo" style="background:#101013;padding:120px 16px 40px">
+  <div style="max-width:1140px;margin:0 auto">
+    <div data-tk="reveal" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00D07E">04</span>&nbsp;&nbsp;Método Tekera</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;align-items:start;padding:24px 0 56px">
+      <h2 data-tk="reveal" style="font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;margin:0;color:#FAFAFA">O <strong style="font-weight:700">Método Tekera</strong>: escala no piloto automático.</h2>
+      <p data-tk="reveal" style="margin:0;font-size:17px;line-height:1.65;color:#A1A1AA">Não vendemos ferramentas soltas. Instalamos um <strong style="color:#FAFAFA;font-weight:600">sistema de crescimento em 3 camadas</strong> — atendimento, processo e operação — rodando juntas 24/7, com métricas semanais para você enxergar o que cada uma entrega.</p>
+    </div>
+
+    <div data-tk="stack" style="display:flex;flex-direction:column">
+      <div data-tk="layer" style="position:sticky;top:96px;padding-bottom:24px">
+        <div style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;align-items:center">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#00D07E">Camada 01</span>
+            <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:28px;letter-spacing:-0.02em;color:#FAFAFA">Atendimento que não dorme</span>
+          </div>
+          <p style="margin:0;font-size:16px;line-height:1.65;color:#A1A1AA">Imagine acordar com 3 agendamentos feitos às 2h da manhã. Sem você. Sem a sua equipe. Um consultor de IA atende, qualifica, precifica e agenda com o tom da sua empresa — como ter o seu melhor vendedor clonado em 50 cópias.</p>
+        </div>
+      </div>
+      <div data-tk="layer" style="position:sticky;top:116px;padding-bottom:24px">
+        <div style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;align-items:center">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#00D07E">Camada 02</span>
+            <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:28px;letter-spacing:-0.02em;color:#FAFAFA">Processo que não depende de herói</span>
+          </div>
+          <p style="margin:0;font-size:16px;line-height:1.65;color:#A1A1AA">O lead entra. Sabe exatamente onde está. Sabe quem cuida dele. Sabe quando vai ser chamado. Nada fica na cabeça de ninguém. Nada some. Nada é esquecido.</p>
+        </div>
+      </div>
+      <div data-tk="layer" style="position:sticky;top:136px;padding-bottom:24px">
+        <div style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:40px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;align-items:center">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#00D07E">Camada 03</span>
+            <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:28px;letter-spacing:-0.02em;color:#FAFAFA">Operação que não quebra</span>
+          </div>
+          <p style="margin:0;font-size:16px;line-height:1.65;color:#A1A1AA">Agenda, financeiro, estoque e compras rodando no piloto automático. A operação inteira pronta para crescer sem você precisar crescer junto.</p>
+        </div>
+      </div>
+    </div>
+
+    <p data-tk="reveal" style="max-width:820px;margin:88px auto 0;text-align:center;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(20px,2.2vw,26px);line-height:1.45;color:#FAFAFA">Um e-commerce, uma clínica, uma construtora ou um escritório não precisam de mais esforço. <strong style="font-weight:600">Precisam de processo e ferramenta.</strong></p>
+    <div style="height:96px"></div>
+  </div>
+</section>
+
+<section id="entregamos" style="padding:120px 16px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div>
+      <div data-tk="reveal" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">05</span>&nbsp;&nbsp;O que a Tekera instala na operação</div>
+      <h2 data-tk="reveal" style="margin:24px 0 0;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;color:#101013">O que <strong style="font-weight:700">some da sua rotina</strong> e o que <strong style="font-weight:700">aparece no lugar.</strong></h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;border-top:1px solid #E4E4E7">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;padding:16px 4px 12px;border-bottom:1px solid #E4E4E7">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#5A5A62">O que some</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#00754A">O que aparece</span>
+      </div>
+      <div data-tk="row" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:baseline;padding:22px 4px;border-bottom:1px solid #E4E4E7">
+        <span style="font-size:16px;line-height:1.5;color:#5A5A62;text-decoration:line-through;text-decoration-color:#C9C9CE">WhatsApp bombardeado às 23h</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;line-height:1.45;color:#101013">Mensagens respondidas em segundos, 24h por dia</span>
+      </div>
+      <div data-tk="row" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:baseline;padding:22px 4px;border-bottom:1px solid #E4E4E7">
+        <span style="font-size:16px;line-height:1.5;color:#5A5A62;text-decoration:line-through;text-decoration-color:#C9C9CE">Pedido perdido no WhatsApp e no Mercado Livre</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;line-height:1.45;color:#101013">Funil visível: você vê onde cada lead trava</span>
+      </div>
+      <div data-tk="row" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:baseline;padding:22px 4px;border-bottom:1px solid #E4E4E7">
+        <span style="font-size:16px;line-height:1.5;color:#5A5A62;text-decoration:line-through;text-decoration-color:#C9C9CE">Planilha quebrada na mão do estagiário</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;line-height:1.45;color:#101013">Back office automático: estoque, financeiro, compras</span>
+      </div>
+      <div data-tk="row" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:baseline;padding:22px 4px;border-bottom:1px solid #E4E4E7">
+        <span style="font-size:16px;line-height:1.5;color:#5A5A62;text-decoration:line-through;text-decoration-color:#C9C9CE">Anúncio bonito que não vende</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;line-height:1.45;color:#101013">Máquina de aquisição conectada direto ao atendimento</span>
+      </div>
+      <div data-tk="row" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;align-items:baseline;padding:22px 4px;border-bottom:1px solid #E4E4E7">
+        <span style="font-size:16px;line-height:1.5;color:#5A5A62;text-decoration:line-through;text-decoration-color:#C9C9CE">Decisão no escuro</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;line-height:1.45;color:#101013">Dashboard com número real toda semana</span>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;padding-top:16px">
+      <div data-tk="step" class="step-card" style="display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:16px;background:#FFFFFF;border:1px solid #E4E4E7">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#00754A">01</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:#101013">Conversa inicial</span>
+        <span style="font-size:14px;line-height:1.6;color:#5A5A62">30 min no WhatsApp. Perguntas que ninguém te fez. Buracos que você não sabia que existiam.</span>
+      </div>
+      <div data-tk="step" class="step-card" style="display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:16px;background:#FFFFFF;border:1px solid #E4E4E7">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#00754A">02</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:#101013">Plano</span>
+        <span style="font-size:14px;line-height:1.6;color:#5A5A62">O que entra primeiro, o que espera, e o retorno esperado de cada camada.</span>
+      </div>
+      <div data-tk="step" class="step-card" style="display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:16px;background:#FFFFFF;border:1px solid #E4E4E7">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#00754A">03</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:#101013">Setup</span>
+        <span style="font-size:14px;line-height:1.6;color:#5A5A62">Implantação com a sua equipe usando, sem precisar ser técnica.</span>
+      </div>
+      <div data-tk="step" class="step-card" style="display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:16px;background:#FFFFFF;border:1px solid #E4E4E7">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#00754A">04</span>
+        <span style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:#101013">Escala monitorada</span>
+        <span style="font-size:14px;line-height:1.6;color:#5A5A62">Métricas semanais (resposta, conversão, ticket) e ajuste contínuo.</span>
+      </div>
+    </div>
+
+    <a href="#contato" data-tk="reveal" class="btn-inverse" style="align-self:flex-start;font-size:15px;font-weight:600;padding:16px 28px;border-radius:12px;background:#101013;color:#FAFAFA">Falar com a Tekera</a>
+  </div>
+</section>
+
+<section id="fundador" style="background:#101013;padding:120px 16px">
+  <div style="max-width:1140px;margin:0 auto">
+    <div data-tk="reveal" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00D07E">06</span>&nbsp;&nbsp;Fundador</div>
+    <h2 data-tk="reveal" style="margin:24px 0 40px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#FAFAFA;max-width:820px">Matheus Cabral. <strong style="font-weight:700">Dez anos dentro de empresa de tecnologia.</strong></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:48px;margin-top:8px">
+      <div data-tk="reveal">
         <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:56px;letter-spacing:-0.02em;line-height:1;color:#00D07E">10+</div>
         <div style="font-size:14px;line-height:1.65;color:#A1A1AA;margin-top:12px;max-width:260px">Anos construindo produto e operação em empresas de tecnologia.</div>
       </div>
-      <div>
+      <div data-tk="reveal">
         <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:56px;letter-spacing:-0.02em;line-height:1;color:#FAFAFA">1 dono</div>
         <div style="font-size:14px;line-height:1.65;color:#A1A1AA;margin-top:12px;max-width:260px">Que assina, atende e responde pelo que a Tekera entrega.</div>
       </div>
-      <div>
+      <div data-tk="reveal">
         <div style="font-family:'Sora',sans-serif;font-weight:600;font-size:56px;letter-spacing:-0.02em;line-height:1;color:#FAFAFA">PME</div>
         <div style="font-size:14px;line-height:1.65;color:#A1A1AA;margin-top:12px;max-width:260px">O único público. Pequeno e médio empresário, dentro do e-commerce.</div>
       </div>
     </div>
-    <p style="margin:64px 0 0;font-size:17px;line-height:1.7;color:#A1A1AA;max-width:760px">Passei dez anos por dentro de empresa de tecnologia, vendo como corporação grande resolve o que corporação pequena ainda faz na mão. A Tekera é o caminho para levar essa mesma engenharia para quem toca a operação de perto.</p>
+    <p data-tk="reveal" style="margin:64px 0 0;font-size:17px;line-height:1.7;color:#A1A1AA;max-width:760px">Passei dez anos por dentro de empresa de tecnologia, vendo como corporação grande resolve o que corporação pequena ainda faz na mão. A Tekera é o caminho para levar essa mesma engenharia para quem toca a operação de perto.</p>
   </div>
 </section>
 
-<section id="privacidade" style="padding:104px 16px">
-  <div style="max-width:1140px;margin:0 auto">
-    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">03</span>&nbsp;&nbsp;Privacidade</div>
-    <h2 style="margin:24px 0 40px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#101013;max-width:820px">Como a Tekera trata dados e mensagens de <strong style="font-weight:700">WhatsApp</strong>.</h2>
-    <div style="max-width:760px;display:grid;gap:24px;font-size:17px;line-height:1.7;color:#5A5A62">
-      <p style="margin:0"><strong style="color:#101013;font-weight:600">Dados coletados.</strong> A Tekera coleta apenas os dados necessários para prestar o serviço: nome, telefone, e-mail e o conteúdo da conversa iniciada pelo cliente com a empresa.</p>
-      <p style="margin:0"><strong style="color:#101013;font-weight:600">Uso dos dados.</strong> Usamos os dados para responder ao cliente, executar o serviço contratado e cumprir obrigação legal. Nada é vendido a terceiros.</p>
-      <p style="margin:0"><strong style="color:#101013;font-weight:600">WhatsApp Business API.</strong> Quando a conversa acontece pelo WhatsApp, o tratamento segue também os termos da Meta Platforms, Inc. Só enviamos mensagem para quem iniciou a conversa ou consentiu expressamente em recebê-la.</p>
-      <p style="margin:0"><strong style="color:#101013;font-weight:600">Armazenamento.</strong> Dados ficam em provedores de nuvem com criptografia em trânsito e em repouso, no prazo estritamente necessário para o serviço e o cumprimento da LGPD (Lei 13.709/2018).</p>
-      <p style="margin:0"><strong style="color:#101013;font-weight:600">Seus direitos.</strong> O titular pode a qualquer momento pedir acesso, correção ou exclusão dos seus dados escrevendo para <a href="mailto:contato@tekeradigital.com.br">contato@tekeradigital.com.br</a>.</p>
-      <p style="margin:0"><a href="/privacidade">Ler a Política de Privacidade completa</a> · <a href="/termos">Termos de Uso</a></p>
+<section id="faq" style="padding:120px 16px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:40px">
+    <div>
+      <div data-tk="reveal" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00754A">07</span>&nbsp;&nbsp;Perguntas rápidas</div>
+      <h2 data-tk="reveal" style="margin:24px 0 0;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;color:#101013;max-width:860px">O que todo mundo pergunta <strong style="font-weight:700">antes de começar.</strong></h2>
+    </div>
+    <div style="display:flex;flex-direction:column;border-top:1px solid #E4E4E7">
+      <details data-tk="row" style="border-bottom:1px solid #E4E4E7;padding:24px 4px" open>
+        <summary style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:#101013;display:flex;justify-content:space-between;gap:20px"><span>Minha equipe não é técnica. Dá?</span><span style="color:#00754A">+</span></summary>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.7;color:#5A5A62;max-width:720px">Dá mais do que você imagina. Se a sua equipe usa WhatsApp, ela já sabe operar 90% do sistema. O resto a gente ensina em uma hora.</p>
+      </details>
+      <details data-tk="row" style="border-bottom:1px solid #E4E4E7;padding:24px 4px">
+        <summary style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:#101013;display:flex;justify-content:space-between;gap:20px"><span>Demora para funcionar?</span><span style="color:#00754A">+</span></summary>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.7;color:#5A5A62;max-width:720px">O sistema está operando em até 7 dias. E quando entra no ar, responde em segundos — não em horas, não no dia seguinte.</p>
+      </details>
+      <details data-tk="row" style="border-bottom:1px solid #E4E4E7;padding:24px 4px">
+        <summary style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:#101013;display:flex;justify-content:space-between;gap:20px"><span>E se eu quiser cancelar?</span><span style="color:#00754A">+</span></summary>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.7;color:#5A5A62;max-width:720px">Zero fidelidade. Não trabalhamos com contrato de permanência: você continua porque o sistema está dando resultado, não porque está preso a uma multa.</p>
+      </details>
+      <details data-tk="row" style="border-bottom:1px solid #E4E4E7;padding:24px 4px">
+        <summary style="font-family:'Sora',sans-serif;font-weight:600;font-size:17px;color:#101013;display:flex;justify-content:space-between;gap:20px"><span>A Tekera atende qualquer setor?</span><span style="color:#00754A">+</span></summary>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.7;color:#5A5A62;max-width:720px">O foco é pequeno e médio empresário dentro do e-commerce. Mas o mesmo método já foi aplicado em clínica, construtora e escritório — o padrão da operação é o mesmo.</p>
+      </details>
     </div>
   </div>
 </section>
 
-<section id="contato" class="teleios-dark" style="background:#101013;padding:104px 16px">
+<section id="contato" style="background:#101013;padding:120px 16px">
   <div style="max-width:1140px;margin:0 auto">
-    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00D07E">04</span>&nbsp;&nbsp;Contato</div>
-    <h2 style="margin:24px 0 40px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#FAFAFA;max-width:760px">Um endereço. <strong style="font-weight:700">Uma resposta.</strong></h2>
-    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:900px">
-      <div style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:32px">
+    <div data-tk="reveal" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94"><span style="color:#00D07E">08</span>&nbsp;&nbsp;Contato</div>
+    <h2 data-tk="reveal" style="margin:24px 0 40px;font-family:'Sora',sans-serif;font-weight:300;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.025em;line-height:1.1;color:#FAFAFA;max-width:760px">Um endereço. <strong style="font-weight:700">Uma resposta.</strong></h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;max-width:900px">
+      <div data-tk="reveal" style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:32px">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#00D07E">E-mail</div>
         <div style="margin-top:16px;font-family:'Sora',sans-serif;font-weight:300;font-size:24px;letter-spacing:-0.02em;color:#FAFAFA;word-break:break-all"><a href="mailto:contato@tekeradigital.com.br" style="color:#FAFAFA">contato@tekeradigital.com.br</a></div>
       </div>
-      <div style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:32px">
+      <div data-tk="reveal" style="background:#1B1B1F;border:1px solid #2A2A2F;border-radius:20px;padding:32px">
         <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#00D07E">Empresa</div>
         <div style="margin-top:16px;font-family:'Sora',sans-serif;font-weight:300;font-size:20px;letter-spacing:-0.02em;color:#FAFAFA;line-height:1.35">Tekera Digital e Investimentos Ltda</div>
         <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:#A1A1AA">CNPJ 58.227.601/0001-11</div>
@@ -100,14 +284,93 @@
   </div>
 </section>
 
-<footer class="teleios-dark" style="background:#101013;border-top:1px solid #26262C;padding:48px 16px">
-  <div style="max-width:1140px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
-    <span style="font-family:'Sora',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;font-size:17px;color:#FAFAFA">Tekera</span>
-    <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#8B8B94">© 2026 Tekera Digital e Investimentos Ltda · CNPJ 58.227.601/0001-11</span>
+<footer style="background:#101013;border-top:1px solid #26262C;padding:48px 16px">
+  <div style="max-width:1140px;margin:0 auto;display:flex;flex-direction:column;gap:10px;font-size:13px;line-height:1.6;color:#8B8B94">
+    <span><strong style="font-family:'Sora',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#FAFAFA">Tekera</strong> © 2026 Tekera Digital e Investimentos Ltda · CNPJ 58.227.601/0001-11</span>
+    <span>Rua Paulino de Siqueira Cortes, 2565 · São José dos Pinhais/PR · CEP 83005-030</span>
+    <span><a href="mailto:contato@tekeradigital.com.br" style="color:#8B8B94">contato@tekeradigital.com.br</a> · <a href="/privacidade" style="color:#8B8B94">Privacidade</a> · <a href="/termos" style="color:#8B8B94">Termos de Uso</a> · <a href="/privacidade#exclusao" style="color:#8B8B94">Exclusão de dados</a></span>
   </div>
 </footer>
 
-</div>
-</x-dc>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+<script>
+(function(){
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function boot(){
+    if(!window.gsap || !window.ScrollTrigger || !window.Lenis){ return setTimeout(boot, 120); }
+    if(reduced) return;
+    gsap.registerPlugin(ScrollTrigger);
+    var q = function(s){ return Array.prototype.slice.call(document.querySelectorAll('[data-tk="'+s+'"]')); };
+
+    var lenis = new Lenis({ duration: 1.1, smoothWheel: true });
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add(function(t){ lenis.raf(t*1000); });
+    gsap.ticker.lagSmoothing(0);
+
+    // Hero intro
+    var intro = gsap.timeline({ defaults: { ease: 'expo.out' } });
+    var heroLines = q('hline').filter(function(el){ return el.closest('#top'); }).map(function(el){ return el.firstElementChild; });
+    if(heroLines.length){
+      gsap.set(heroLines, { yPercent: 115 });
+      intro.to(heroLines, { yPercent: 0, duration: 1.15, stagger: 0.09 }, 0);
+    }
+    intro.fromTo(q('fade'), { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.7, stagger: 0.08 }, 0.35);
+
+    // Reveal
+    var reveal = function(els, vars){
+      els.forEach(function(el){
+        gsap.fromTo(el,
+          Object.assign({ opacity: 0, y: 22 }, vars && vars.from || {}),
+          Object.assign({ opacity: 1, y: 0, duration: 0.8, ease: 'expo.out', immediateRender: false,
+            scrollTrigger: { trigger: el, start: 'top 88%', toggleActions: 'play none none none' }
+          }, vars && vars.to || {}));
+      });
+    };
+    reveal(q('reveal'));
+    reveal(q('row'), { from: { y: 14 }, to: { duration: 0.6 } });
+
+    // Pain cards + steps
+    ['card', 'step'].forEach(function(kind){
+      var groups = new Map();
+      q(kind).forEach(function(el){ var p = el.parentElement; if(!groups.has(p)) groups.set(p, []); groups.get(p).push(el); });
+      groups.forEach(function(els, p){
+        gsap.fromTo(els,
+          { opacity: 0, y: 30, rotate: -1.2 },
+          { opacity: 1, y: 0, rotate: 0, duration: 0.85, ease: 'expo.out', stagger: 0.12, immediateRender: false,
+            scrollTrigger: { trigger: p, start: 'top 82%', toggleActions: 'play none none none' } }
+        );
+      });
+    });
+
+    // Details toggle
+    document.querySelectorAll('details').forEach(function(d){
+      var plus = d.querySelector('summary span:last-child');
+      d.addEventListener('toggle', function(){
+        if(plus) gsap.to(plus, { rotate: d.open ? 45 : 0, duration: 0.3, ease: 'power2.out' });
+        if(d.open) gsap.from(d.querySelector('p'), { opacity: 0, y: -6, duration: 0.4, ease: 'power2.out' });
+      });
+    });
+
+    // Anchor smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var href = a.getAttribute('href');
+        if(href === '#' || href.length < 2) return;
+        var t = document.querySelector(href);
+        if(!t) return;
+        e.preventDefault();
+        lenis.scrollTo(t, { offset: -70 });
+      });
+    });
+
+    ScrollTrigger.refresh();
+  }
+  if(document.readyState !== 'loading') boot();
+  else document.addEventListener('DOMContentLoaded', boot);
+})();
+</script>
+
 </body>
 </html>
