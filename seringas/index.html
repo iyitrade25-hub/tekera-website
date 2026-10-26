@@ -25,7 +25,8 @@ window.TEKERA = {
   ga4Id: "",                         // opcional, ex.: "G-XXXXXXX"
   mensagens: {
     geral:    "Olá! Tenho clínica de estética e quero o kit com 50 seringas SMED 32G (R$ 115).",
-    estetica: "Olá! Tenho clínica de estética e quero o kit com 50 seringas SMED 32G (R$ 115)."
+    estetica: "Olá! Tenho clínica de estética e quero o kit com 50 seringas SMED 32G (R$ 115).",
+    amostra:  "Olá! Tenho clínica de estética em Curitiba/região e quero uma amostra grátis da seringa SMED 32G."
   }
 };
 </script>
@@ -54,34 +55,34 @@ section{padding:56px 0}
 .lead{color:var(--text2);font-size:18px;max-width:640px}
 .ph{background:#FFF4CC;border:1px dashed #B58900;color:#6B5200;border-radius:6px;padding:0 6px;font-size:.9em;white-space:nowrap}
 /* topbar */
-.top{background:var(--ink);color:#C9C9CE;font-size:13px;text-align:center;padding:9px 12px}
-.top b{color:#fff}
-.nav{background:var(--ink);border-bottom:1px solid #26262C}
+.top{background:#F1F1EF;color:var(--text2);font-size:13px;text-align:center;padding:9px 12px}
+.top b{color:var(--ink)}
+.nav{background:#fff;border-bottom:1px solid var(--line)}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:58px}
-.logo{font:700 22px 'Sora',sans-serif;color:#fff;text-decoration:none;letter-spacing:-.03em}
+.logo{font:700 22px 'Sora',sans-serif;color:var(--ink);text-decoration:none;letter-spacing:-.03em}
 .logo span{color:var(--green)}
-.nav small{color:#A1A1AA;font-size:12px;display:block;line-height:1.2}
+.nav small{color:var(--muted);font-size:12px;display:block;line-height:1.2}
 /* hero */
-.hero{background:var(--ink);color:#E4E4E7;padding:28px 0 48px}
+.hero{background:var(--soft);color:var(--text);padding:28px 0 48px}
 .hero .grid{display:grid;gap:22px;align-items:center}
-.hero h1{color:#fff;font-size:clamp(30px,7.2vw,52px);font-weight:800}
-.hero h1 em{font-style:normal;color:var(--green)}
-.hero p.sub{color:#C9C9CE;font-size:18px;margin:14px 0 18px}
+.hero h1{color:var(--ink);font-size:clamp(30px,7.2vw,52px);font-weight:800}
+.hero h1 em{font-style:normal;color:var(--green-d)}
+.hero p.sub{color:var(--text2);font-size:18px;margin:14px 0 18px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
-.chip{border:1px solid #2A2A2F;background:var(--ink2);color:#E4E4E7;border-radius:999px;padding:6px 12px;font-size:14px}
-.chip b{color:#fff}
-.player{position:relative;width:100%;max-width:min(100%,calc(56svh * 9 / 16));margin:0 auto;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.45)}
+.chip{border:1px solid var(--line);background:#fff;color:var(--text);border-radius:999px;padding:6px 12px;font-size:14px}
+.chip b{color:var(--ink)}
+.player{position:relative;width:100%;max-width:min(100%,calc(56svh * 9 / 16));margin:0 auto;aspect-ratio:9/16;border-radius:18px;overflow:hidden;background:#000;box-shadow:0 20px 50px rgba(0,0,0,.15)}
 .player img{width:100%;height:100%;object-fit:cover;object-position:center;opacity:.85}
 .player button{position:absolute;inset:0;border:0;background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.7));cursor:pointer;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;font:600 16px 'Instrument Sans',sans-serif}
 .play{width:78px;height:78px;border-radius:50%;background:var(--green);display:grid;place-items:center;box-shadow:0 0 0 10px rgba(0,208,126,.2)}
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vnote{color:#A1A1AA;font-size:14px;text-align:center;margin-top:10px}
+.vnote{color:var(--muted);font-size:14px;text-align:center;margin-top:10px}
 /* buttons */
 .btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:14px 22px;border-radius:12px;background:var(--green);color:#06281A;font:700 17px 'Sora',sans-serif;text-decoration:none;border:0;cursor:pointer;width:100%;max-width:460px;transition:transform .15s}
 .btn:hover{transform:translateY(-1px)}
 .btn svg{flex:none}
 .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
-.micro{font-size:13px;color:#A1A1AA;margin-top:8px}
+.micro{font-size:13px;color:var(--text2);margin-top:8px}
 /* cards */
 .cards{display:grid;gap:14px}
 .card{border:1px solid var(--line);border-radius:var(--r);padding:22px;background:#fff}
@@ -110,12 +111,12 @@ section{padding:56px 0}
 .seal{border:1px solid var(--line);border-left:4px solid var(--green);border-radius:12px;padding:18px 20px;background:#fff}
 .seal .num{font-size:24px}
 /* offer */
-.offer{background:var(--ink);color:#E4E4E7;border-radius:20px;padding:28px 22px}
-.offer h2{color:#fff}
-.price{font:800 44px 'Sora',sans-serif;color:#fff}
+.offer{background:#fff;border:1px solid var(--line);color:var(--text);border-radius:20px;padding:28px 22px}
+.offer h2{color:var(--ink)}
+.price{font:800 44px 'Sora',sans-serif;color:var(--ink)}
 .offer table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}
-.offer td,.offer th{padding:10px 8px;border-bottom:1px solid #2A2A2F;text-align:left}
-.offer th{color:#A1A1AA;font-weight:500;font-size:13px}
+.offer td,.offer th{padding:10px 8px;border-bottom:1px solid var(--line);text-align:left}
+.offer th{color:var(--muted);font-weight:500;font-size:13px}
 /* faq */
 details{border-bottom:1px solid var(--line);padding:16px 0}
 summary{font:600 17px 'Sora',sans-serif;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}
@@ -133,9 +134,9 @@ details p{margin-top:10px;color:var(--text2)}
 .result .num{color:#fff;font-size:30px}
 .result .num.y{color:var(--orange);font-size:36px}
 /* footer */
-footer{background:var(--ink);color:#A1A1AA;font-size:14px;padding:36px 0 30px}
-footer b{color:#fff}
-footer a{color:#C9C9CE}
+footer{background:#F1F1EF;color:var(--text2);font-size:14px;padding:36px 0 30px}
+footer b{color:var(--ink)}
+footer a{color:var(--ink)}
 /* sticky */
 .sticky{position:fixed;left:8px;right:8px;bottom:max(8px,env(safe-area-inset-bottom));z-index:50;transition:transform .25s,opacity .25s}
 .sticky .btn{max-width:none;box-shadow:0 10px 30px rgba(0,0,0,.25)}
@@ -166,8 +167,9 @@ footer a{color:#C9C9CE}
 <section class="hero" id="topo">
  <div class="wrap grid">
   <div class="ht">
-   <span class="eyebrow" style="color:var(--green)">Para clínicas de estética</span>
-   <h1>A seringa <em>32G de agulha fixa</em> que não deixa produto preso no bico.</h1>
+   <span class="eyebrow">Para clínicas de estética</span>
+   <h1>A sua paciente não vê a agulha. <em>Mas sente.</em></h1>
+   <p class="sub">Seringa SMED 32G com ponta multibisel: menos desconforto em cada procedimento, e uma paciente que volta e indica você.</p>
   </div>
   <div class="hv">
    <div class="player" id="player">
@@ -177,10 +179,10 @@ footer a{color:#C9C9CE}
    <p class="vnote">Vídeo de 4 min: como a agulha fixa reduz o desperdício na sua clínica.</p>
   </div>
   <div class="hc">
-   <a class="btn" id="cta-hero" data-publico="geral" href="#" target="_blank" rel="noopener">
+   <a class="btn" id="cta-hero" data-publico="amostra" href="#" target="_blank" rel="noopener">
      <svg width="22" height="22" viewBox="0 0 24 24" fill="#06281A" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.1.5.2.5.3.1.2.1.6-.1 1z"/></svg>
-     Quero meu kit com 50 por R$ 115</a>
-   <p class="micro">Atendimento humano direto com a distribuidora no WhatsApp.</p>
+     QUERO UMA AMOSTRA GRÁTIS</a>
+   <p class="micro">Atendimento humano direto com a distribuidora no WhatsApp. Quer sentir a diferença antes de fechar e é de Curitiba e região? Peça uma amostra grátis e use nos seus próximos atendimentos.</p>
    <p class="sub">SMED 32G: agulha fixa sem espaço morto, ponta multibisel de 0,23 mm e blister individual estéril. Compre direto da distribuidora, com nota fiscal e lote em todo pedido.</p>
    <div class="chips"><span class="chip"><b>32G</b> · 0,23 mm</span><span class="chip"><b>Agulha fixa</b></span><span class="chip">Registro ANVISA <b>82045369004</b></span><span class="chip">Caixa com <b>100</b></span></div>
 
@@ -249,7 +251,7 @@ footer a{color:#C9C9CE}
  <div class="wrap">
   <span class="eyebrow">Linha disponível em estoque</span>
   <h2>Escolha a sua medida</h2>
-  <p class="lead">Todas 32G (0,23 mm), agulha fixa. Kit com 50 (R$ 115) ou caixa com 100 (R$ 219). Pode misturar medidas no mesmo pedido.</p>
+  <p class="lead">Todas 32G (0,23 mm), agulha fixa. Kit com 50 ou caixa com 100. Pode misturar medidas no mesmo pedido.</p>
   <div class="sizes" style="margin-top:18px">
    <div class="size"><img src="assets/rotulo-03x6.webp" width="480" height="656" loading="lazy" alt="Rótulo SMED 0,3 mL 32G x 6 mm"><div>0,3 mL · 6 mm<small>até 30 UI · 1 UI/traço</small></div></div>
    <div class="size"><img src="assets/rotulo-05x6.webp" width="480" height="665" loading="lazy" alt="Rótulo SMED 0,5 mL 32G x 6 mm"><div>0,5 mL · 6 mm<small>até 50 UI · 1 UI/traço</small></div></div>
@@ -286,11 +288,11 @@ footer a{color:#C9C9CE}
  <div class="wrap">
   <div class="offer two">
    <div>
-    <span class="eyebrow" style="color:var(--green)">Condição para clínicas</span>
+    <span class="eyebrow">Condição para clínicas</span>
     <h2>Compre direto da distribuidora</h2>
-    <p style="color:#A1A1AA">Kit com 50 seringas por</p>
-    <p class="price">R$ 115<span style="font-size:18px;color:#A1A1AA">/kit 50</span></p>
-    <p style="color:#C9C9CE;margin-top:6px">ou <b style="color:#fff">R$ 219</b> a caixa com 100 unidades</p>
+    <p style="color:var(--muted)">Kit com 50 seringas por</p>
+    <p class="price">R$ 115<span style="font-size:18px;color:var(--muted)">/kit 50</span></p>
+    <p style="color:var(--text2);margin-top:6px">ou <b style="color:var(--ink)">R$ 219</b> a caixa com 100 unidades</p>
    </div>
    <div>
     <ul style="list-style:none;display:grid;gap:10px;margin-bottom:18px">
