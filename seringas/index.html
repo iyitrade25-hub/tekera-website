@@ -231,24 +231,6 @@ footer a{color:#C9C9CE}
  </div>
 </section>
 
-<!-- CALCULADORA -->
-<section id="calculadora">
- <div class="wrap two">
-  <div>
-   <span class="eyebrow">Faça a conta</span>
-   <h2>Quanto produto fica preso no bico por mês?</h2>
-   <p class="lead">Coloque os números da sua rotina. Valores ilustrativos: use os dados reais da sua clínica.</p>
-  </div>
-  <div class="calc">
-   <div class="field"><label for="c1">Unidades perdidas por aplicação</label><div class="step"><button type="button" data-d="-1" data-t="c1" aria-label="Diminuir">−</button><input id="c1" type="number" inputmode="decimal" value="1" min="0" step="1"><button type="button" data-d="1" data-t="c1" aria-label="Aumentar">+</button></div></div>
-   <div class="field"><label for="c2">Aplicações por mês</label><div class="step"><button type="button" data-d="-10" data-t="c2" aria-label="Diminuir">−</button><input id="c2" type="number" inputmode="numeric" value="60" min="0" step="10"><button type="button" data-d="10" data-t="c2" aria-label="Aumentar">+</button></div></div>
-   <div class="field"><label for="c3">Custo por unidade do produto (R$)</label><div class="step"><button type="button" data-d="-1" data-t="c3" aria-label="Diminuir">−</button><input id="c3" type="number" inputmode="decimal" value="8" min="0" step="1"><button type="button" data-d="1" data-t="c3" aria-label="Aumentar">+</button></div></div>
-   <div class="result" aria-live="polite"><p>Potencial de perda</p><p class="num" id="r-mes">R$ 480,00 <small style="font-size:15px;color:#A1A1AA">por mês</small></p><p class="num y" id="r-ano">R$ 5.760,00</p><p style="font-size:14px">por ano</p></div>
-   <a class="btn" id="cta-calc" data-publico="estetica" href="#" target="_blank" rel="noopener">Quero reduzir esse desperdício</a>
-  </div>
- </div>
-</section>
-
 <!-- ESPECIFICAÇÕES -->
 <section class="soft" id="specs">
  <div class="wrap">
@@ -294,8 +276,6 @@ footer a{color:#C9C9CE}
    <div>
     <h3>Certificação INMETRO</h3><p class="muted" style="margin-bottom:16px">Certificado INMETRO LMP 25.3112 e 25.3113 (conforme ficha técnica do fabricante).</p>
     <h3>Distribuidora local</h3><p class="muted" style="margin-bottom:16px">Estamos em São José dos Pinhais/PR e entregamos em Curitiba e região metropolitana em menos de 24 horas. Enviamos para todo o Brasil.</p>
-    <h3>Chegou diferente? A gente troca.</h3><p class="muted">Se a medida entregue for diferente da pedida, trocamos. <span class="ph">[CONFIRMAR termos da política de troca]</span></p>
-    <p class="muted" style="margin-top:16px">[PLACEHOLDER DEPOIMENTOS] Inserir aqui avaliações reais de clientes quando houver. Não usar depoimentos fictícios.</p>
    </div>
   </div>
  </div>
@@ -333,11 +313,11 @@ footer a{color:#C9C9CE}
   <h2>Antes de pedir</h2>
   <details><summary>A seringa é original e regularizada?</summary><p>Sim. Produto SMED com registro ANVISA/MS nº 82045369004, importado pela Share Medical Brasil, e distribuído pela Tekera, com AFE ANVISA nº 8352080. O registro pode ser consultado no site da ANVISA.</p></details>
   <details><summary>Vocês emitem nota fiscal?</summary><p>Sim. Todo pedido sai com nota fiscal e registro de lote.</p></details>
-  <details><summary>E se vier alguma unidade com defeito?</summary><p>Cada seringa vem em blister individual estéril. Se houver qualquer problema, fale com a gente pelo WhatsApp com o lote em mãos. <span class="ph">[CONFIRMAR política de troca por defeito]</span></p></details>
+  <details><summary>E se vier alguma unidade com defeito?</summary><p>Cada seringa vem em blister individual estéril. Se houver qualquer problema, fale com a gente pelo WhatsApp com o lote em mãos.</p></details>
   <details><summary>Qual a diferença da 32G para a 30G ou 31G?</summary><p>O número maior indica agulha mais fina: a 32G tem 0,23 mm de diâmetro. Somada à ponta multibisel, foi desenvolvida para mais conforto na aplicação.</p></details>
   <details><summary>Qual o prazo de entrega?</summary><p>Em Curitiba e região metropolitana, em menos de 24 horas. Para outras regiões, consulte prazo e frete pelo WhatsApp.</p></details>
   <details><summary>Qual o pedido mínimo?</summary><p>Kit com 50 seringas, por R$ 115. A caixa com 100 sai por R$ 219. Para compras recorrentes, fale com a gente no WhatsApp.</p></details>
-  <details><summary>Qual a validade?</summary><p>Os lotes atuais têm validade impressa em cada blister. <span class="ph">(página original: até 2031, CONFIRMAR)</span></p></details>
+  <details><summary>Qual a validade?</summary><p>Os lotes atuais têm validade impressa em cada blister.</p></details>
   <details><summary>Posso misturar medidas?</summary><p>Sim. Fale com a gente pelo WhatsApp e montamos o seu pedido.</p></details>
   <details><summary>Quem pode usar?</summary><p>Produto para saúde de uso profissional, conforme a ficha técnica. Uso único, descarte em coletor para perfurocortantes.</p></details>
  </div>
@@ -380,12 +360,6 @@ footer a{color:#C9C9CE}
    if(window.fbq)fbq("track","Contact",{content_name:a.id,content_category:p});
    if(window.gtag)gtag("event","whatsapp_click",{button_id:a.id,publico:p});});
  });
- // calculadora
- var brl=new Intl.NumberFormat("pt-BR",{style:"currency",currency:"BRL"});
- function v(id){var x=parseFloat(document.getElementById(id).value);return isFinite(x)&&x>0?x:0}
- function calc(){var m=v("c1")*v("c2")*v("c3");document.getElementById("r-mes").firstChild.nodeValue=brl.format(m)+" ";document.getElementById("r-ano").textContent=brl.format(m*12)}
- document.querySelectorAll(".step button").forEach(function(b){b.addEventListener("click",function(){var i=document.getElementById(b.dataset.t);i.value=Math.max(0,(parseFloat(i.value)||0)+parseFloat(b.dataset.d));calc()})});
- document.querySelectorAll(".calc input").forEach(function(i){i.addEventListener("input",calc)});
  // player (facade: só carrega o iframe no clique)
  var pl=document.getElementById("player"),pv=C.video;
  document.getElementById("playbtn").addEventListener("click",function(){
